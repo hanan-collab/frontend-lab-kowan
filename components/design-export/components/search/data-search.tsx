@@ -1,12 +1,12 @@
 import React, { useState, useRef } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Button } from '../ui/button';
-import { Input } from '../ui/input';
-import { Badge } from '../ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../ui/dialog';
-import { Label } from '../ui/label';
+import { Card, CardContent, CardHeader, CardTitle } from '../../../ui/card';
+import { Button } from '../../../ui/button';
+import { Input } from '../../../ui/input';
+import { Badge } from '../../../ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { Avatar, AvatarFallback, AvatarImage } from '../../../ui/avatar';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../../../ui/dialog';
+import { Label } from '../../../ui/label';
 import {
   Search,
   User,

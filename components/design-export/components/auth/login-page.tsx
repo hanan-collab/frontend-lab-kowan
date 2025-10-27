@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
-import { Input } from '../ui/input';
-import { Button } from '../ui/button';
-import { Label } from '../ui/label';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../../ui/card';
+import { Input } from '../../../ui/input';
+import { Button } from '../../../ui/button';
+import { Label } from '../../../ui/label';
 import { Shield, Eye, EyeOff } from 'lucide-react';
 import { toast } from 'sonner';
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
-import { Button } from '../ui/button';
-import { Badge } from '../ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../../ui/card';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../ui/select';
+import { Button } from '../../../ui/button';
+import { Badge } from '../../../ui/badge';
 import {
   CalendarIcon,
   TrendingUp,
@@ -29,8 +29,8 @@ import {
   Pie,
   Cell,
 } from 'recharts';
-import { Calendar } from '../ui/calendar';
-import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
+import { Calendar } from '../../../ui/calendar';
+import { Popover, PopoverContent, PopoverTrigger } from '../../../ui/popover';
 import { format } from 'date-fns';
 import indonesiaMap from 'figma:asset/eec0798aa79e64301592237144b719325528103f.png';
 

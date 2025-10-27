@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Button } from '../ui/button';
-import { Input } from '../ui/input';
-import { Badge } from '../ui/badge';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from '../ui/sheet';
-import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
-import { Label } from '../ui/label';
+import { Button } from '../../../ui/button';
+import { Input } from '../../../ui/input';
+import { Badge } from '../../../ui/badge';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../ui/select';
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from '../../../ui/sheet';
+import { Card, CardHeader, CardTitle, CardContent } from '../../../ui/card';
+import { Label } from '../../../ui/label';
 import {
   Users,
   Building2,

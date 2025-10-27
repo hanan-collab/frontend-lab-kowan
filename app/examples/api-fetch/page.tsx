@@ -7,7 +7,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from '@/components/design-export/components/ui/card';
+} from '@/components/ui/card';
 import {
   Table,
   TableBody,
@@ -15,11 +15,11 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/design-export/components/ui/table';
-import { Button } from '@/components/design-export/components/ui/button';
+} from '@/components/ui/table';
+import { Button } from '@/components/ui/button';
 import { Loader2, PlusCircle, RefreshCcw } from 'lucide-react';
 import { toast } from 'sonner';
-import { SectionHeader } from '@/components/design-export/components/ui/section-header';
+import { SectionHeader } from '@/components/ui/section-header';
 import { usePathname } from 'next/navigation';
 import { getMenuItemByPath } from '@/config/menu';
 

@@ -8,16 +8,16 @@ import {
   SidebarMenuButton,
   SidebarProvider,
   SidebarTrigger,
-} from '../ui/sidebar';
-import { Button } from '../ui/button';
-import { Avatar, AvatarFallback } from '../ui/avatar';
+} from '../../../ui/sidebar';
+import { Button } from '../../../ui/button';
+import { Avatar, AvatarFallback } from '../../../ui/avatar';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '../ui/dropdown-menu';
+} from '../../../ui/dropdown-menu';
 import {
   Shield,
   BarChart3,

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Button } from '../ui/button';
-import { Input } from '../ui/input';
-import { Textarea } from '../ui/textarea';
-import { Label } from '../ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
-import { Card, CardContent } from '../ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
-import { Badge } from '../ui/badge';
-import { Separator } from '../ui/separator';
+import { Button } from '../../../ui/button';
+import { Input } from '../../../ui/input';
+import { Textarea } from '../../../ui/textarea';
+import { Label } from '../../../ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../ui/select';
+import { Card, CardContent } from '../../../ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { Badge } from '../../../ui/badge';
+import { Separator } from '../../../ui/separator';
 import {
   CalendarIcon,
   Users,
@@ -18,10 +18,10 @@ import {
   Building2,
   UserCircle,
 } from 'lucide-react';
-import { Calendar } from '../ui/calendar';
-import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
-import { Checkbox } from '../ui/checkbox';
-import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
+import { Calendar } from '../../../ui/calendar';
+import { Popover, PopoverContent, PopoverTrigger } from '../../../ui/popover';
+import { Checkbox } from '../../../ui/checkbox';
+import { RadioGroup, RadioGroupItem } from '../../../ui/radio-group';
 import { toast } from 'sonner';
 
 interface CreateProjectFormProps {

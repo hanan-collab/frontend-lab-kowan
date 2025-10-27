@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { toast } from 'sonner';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Input } from '../ui/input';
-import { Button } from '../ui/button';
-import { Badge } from '../ui/badge';
-import { Label } from '../ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
+import { Card, CardContent, CardHeader, CardTitle } from '../../../ui/card';
+import { Input } from '../../../ui/input';
+import { Button } from '../../../ui/button';
+import { Badge } from '../../../ui/badge';
+import { Label } from '../../../ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../ui/select';
 import {
   Dialog,
   DialogContent,
@@ -13,9 +13,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../ui/dialog';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
-import { Textarea } from '../ui/textarea';
+} from '../../../ui/dialog';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../../../ui/table';
+import { Textarea } from '../../../ui/textarea';
 import {
   Plus,
   Search,
@@ -54,12 +54,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
   DropdownMenuSeparator,
-} from '../ui/dropdown-menu';
-import { Avatar, AvatarFallback } from '../ui/avatar';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../ui/tooltip';
-import { Switch } from '../ui/switch';
-import { Checkbox } from '../ui/checkbox';
-import { Separator } from '../ui/separator';
+} from '../../../ui/dropdown-menu';
+import { Avatar, AvatarFallback } from '../../../ui/avatar';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../../ui/tooltip';
+import { Switch } from '../../../ui/switch';
+import { Checkbox } from '../../../ui/checkbox';
+import { Separator } from '../../../ui/separator';
 
 // Mock users untuk sistem kolaborasi real-time
 const mockUsers = [

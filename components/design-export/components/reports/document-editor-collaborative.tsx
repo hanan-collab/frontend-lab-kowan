@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams, useLocation } from 'react-router-dom';
 import { toast } from 'sonner';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Input } from '../ui/input';
-import { Button } from '../ui/button';
-import { Badge } from '../ui/badge';
-import { Label } from '../ui/label';
-import { Textarea } from '../ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
-import { Avatar, AvatarFallback } from '../ui/avatar';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../ui/tooltip';
-import { Switch } from '../ui/switch';
-import { Separator } from '../ui/separator';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
+import { Card, CardContent, CardHeader, CardTitle } from '../../../ui/card';
+import { Input } from '../../../ui/input';
+import { Button } from '../../../ui/button';
+import { Badge } from '../../../ui/badge';
+import { Label } from '../../../ui/label';
+import { Textarea } from '../../../ui/textarea';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../ui/select';
+import { Avatar, AvatarFallback } from '../../../ui/avatar';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../../ui/tooltip';
+import { Switch } from '../../../ui/switch';
+import { Separator } from '../../../ui/separator';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
 import {
   ArrowLeft,
   Save,
@@ -68,7 +68,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
   DropdownMenuSeparator,
-} from '../ui/dropdown-menu';
+} from '../../../ui/dropdown-menu';
 import {
   Dialog,
   DialogContent,
@@ -76,8 +76,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../ui/dialog';
-import { ScrollArea } from '../ui/scroll-area';
+} from '../../../ui/dialog';
+import { ScrollArea } from '../../../ui/scroll-area';
 
 // Mock users
 const mockUsers = [

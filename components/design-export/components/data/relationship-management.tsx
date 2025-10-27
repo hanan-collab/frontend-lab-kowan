@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Input } from '../ui/input';
-import { Button } from '../ui/button';
-import { Badge } from '../ui/badge';
-import { Label } from '../ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
+import { Card, CardContent, CardHeader, CardTitle } from '../../../ui/card';
+import { Input } from '../../../ui/input';
+import { Button } from '../../../ui/button';
+import { Badge } from '../../../ui/badge';
+import { Label } from '../../../ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../ui/select';
 import {
   Dialog,
   DialogContent,
@@ -12,12 +12,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../ui/dialog';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
-import { Textarea } from '../ui/textarea';
-import { Slider } from '../ui/slider';
-import { Calendar } from '../ui/calendar';
-import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
+} from '../../../ui/dialog';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../../../ui/table';
+import { Textarea } from '../../../ui/textarea';
+import { Slider } from '../../../ui/slider';
+import { Calendar } from '../../../ui/calendar';
+import { Popover, PopoverContent, PopoverTrigger } from '../../../ui/popover';
 import {
   Plus,
   Search,
@@ -38,7 +38,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '../ui/dropdown-menu';
+} from '../../../ui/dropdown-menu';
 import { format } from 'date-fns';
 import { toast } from 'sonner';
 

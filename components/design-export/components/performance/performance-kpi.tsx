@@ -1,11 +1,11 @@
 import image_2b3b9b1161dcc7a2ed21ebff0a8093c745e3d57b from 'figma:asset/2b3b9b1161dcc7a2ed21ebff0a8093c745e3d57b.png';
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Badge } from '../ui/badge';
-import { Button } from '../ui/button';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
-import { Progress } from '../ui/progress';
+import { Card, CardContent, CardHeader, CardTitle } from '../../../ui/card';
+import { Badge } from '../../../ui/badge';
+import { Button } from '../../../ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../ui/select';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../../../ui/table';
+import { Progress } from '../../../ui/progress';
 import {
   BarChart,
   Bar,

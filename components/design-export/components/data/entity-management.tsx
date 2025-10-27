@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader } from '../ui/card';
-import { Input } from '../ui/input';
-import { Button } from '../ui/button';
-import { Badge } from '../ui/badge';
-import { Label } from '../ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
+import { Card, CardContent, CardHeader } from '../../../ui/card';
+import { Input } from '../../../ui/input';
+import { Button } from '../../../ui/button';
+import { Badge } from '../../../ui/badge';
+import { Label } from '../../../ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../ui/select';
 import {
   Dialog,
   DialogContent,
@@ -12,8 +12,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../ui/dialog';
-import { Avatar, AvatarFallback } from '../ui/avatar';
+} from '../../../ui/dialog';
+import { Avatar, AvatarFallback } from '../../../ui/avatar';
 import {
   Plus,
   Search,
@@ -31,7 +31,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '../ui/dropdown-menu';
+} from '../../../ui/dropdown-menu';
 import { toast } from 'sonner';
 
 const mockEntities = [

@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { Loader2 } from 'lucide-react';
-import { cn } from '../design-export/components/ui/utils';
+import { cn } from '@/lib/utils';
 
 export function LoadingOverlay({ className }: { className?: string }) {
   return (
@@ -13,7 +13,7 @@ export function LoadingOverlay({ className }: { className?: string }) {
       )}
     >
       <Loader2 className="h-8 w-8 animate-spin text-primary" />
-      <span className="ml-2 text-sm text-muted-foreground">Loading page...</span>
+      <span className="ml-2 text-sm text-muted-foreground">Preparing page...</span>
     </div>
   );
 }

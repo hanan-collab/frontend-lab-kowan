@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Bell, AlertTriangle, TrendingDown, Clock, CheckCircle, X } from 'lucide-react';
-import { Button } from '../ui/button';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '../ui/dropdown-menu';
-import { Badge } from '../ui/badge';
-import { ScrollArea } from '../ui/scroll-area';
-import { Separator } from '../ui/separator';
+import { Button } from '../../../ui/button';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '../../../ui/dropdown-menu';
+import { Badge } from '../../../ui/badge';
+import { ScrollArea } from '../../../ui/scroll-area';
+import { Separator } from '../../../ui/separator';
 
 export interface Notification {
   id: string;

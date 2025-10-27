@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Button } from '../ui/button';
-import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
-import { Badge } from '../ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
-import { Progress } from '../ui/progress';
-import { Separator } from '../ui/separator';
+import { Button } from '../../../ui/button';
+import { Card, CardHeader, CardTitle, CardContent } from '../../../ui/card';
+import { Badge } from '../../../ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { Progress } from '../../../ui/progress';
+import { Separator } from '../../../ui/separator';
 import {
   Calendar,
   Users,

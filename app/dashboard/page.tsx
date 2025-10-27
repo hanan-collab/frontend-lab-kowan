@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { SectionHeader } from '@/components/design-export/components/ui/section-header';
+import { SectionHeader } from '@/components/ui/section-header';
 import { getMenuItemByPath } from '@/config/menu';
 import { usePathname } from 'next/navigation';
 

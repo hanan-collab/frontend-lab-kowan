@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Button } from '../ui/button';
-import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
-import { Badge } from '../ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
-import { Progress } from '../ui/progress';
-import { Separator } from '../ui/separator';
-import { Input } from '../ui/input';
-import { Textarea } from '../ui/textarea';
+import { Button } from '../../../ui/button';
+import { Card, CardHeader, CardTitle, CardContent } from '../../../ui/card';
+import { Badge } from '../../../ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
+import { Progress } from '../../../ui/progress';
+import { Separator } from '../../../ui/separator';
+import { Input } from '../../../ui/input';
+import { Textarea } from '../../../ui/textarea';
 import {
   Calendar,
   Users,
@@ -44,8 +44,8 @@ import {
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { ProjectOntologyView } from './project-ontology-view';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '../ui/dialog';
-import { Checkbox } from '../ui/checkbox';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '../../../ui/dialog';
+import { Checkbox } from '../../../ui/checkbox';
 
 interface Project {
   id: string;

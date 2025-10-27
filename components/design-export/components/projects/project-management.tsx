@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '../ui/button';
-import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
-import { Input } from '../ui/input';
-import { Badge } from '../ui/badge';
+import { Button } from '../../../ui/button';
+import { Card, CardHeader, CardTitle, CardContent } from '../../../ui/card';
+import { Input } from '../../../ui/input';
+import { Badge } from '../../../ui/badge';
 import {
   Dialog,
   DialogContent,
@@ -11,8 +11,8 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogDescription,
-} from '../ui/dialog';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
+} from '../../../ui/dialog';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../ui/tabs';
 import {
   Plus,
   Search,
