@@ -5,85 +5,188 @@ export interface MenuItem {
   path: string;
   icon: string;
   children?: MenuItem[];
+  group?: string;
 }
+
+export const APP_INFO = {
+  title: 'Pelacakan Aset',
+  subtitle: 'Kejaksaan Agung RI',
+  logo: 'Shield' as const,
+};
 
 export const MENU_ITEMS: MenuItem[] = [
   {
     key: 'dashboard',
-    title: 'Dasbor Eksekutif',
-    subtitle: 'Ikhtisar operasi investigasi dan pelacakan aset',
+    title: 'Dasbor',
     path: '/dashboard',
-    icon: 'LayoutDashboard'
-  },
-  {
-    key: 'api-fetch',
-    title: 'Api Fetch Example',
-    subtitle: 'Contoh implementasi data fetching dengan React Query',
-    path: '/examples/api-fetch',
-    icon: 'Bot'
+    icon: 'LayoutDashboard',
   },
   {
     key: 'projects',
     title: 'Proyek',
-    subtitle: 'Manajemen proyek dan investigasi',
     path: '/projects',
     icon: 'FolderClosed',
+  },
+  {
+    key: 'link-analysis',
+    title: 'Link Analysis',
+    path: '/link-analysis',
+    icon: 'Network',
+  },
+  {
+    key: 'data-search',
+    title: 'Pencarian Data',
+    path: '/search',
+    icon: 'Search',
+  },
+  {
+    key: 'data-management',
+    title: 'Manajemen Data Ontologi',
+    path: '/data-management',
+    icon: 'Database',
     children: [
-      { key: 'assets', title: 'Aset', path: '/projects/assets', icon: 'Database', subtitle: 'Manajemen data aset' },
-      { key: 'entities', title: 'Entitas', path: '/projects/entities', icon: 'Users', subtitle: 'Manajemen data entitas' },
-      { key: 'relationships', title: 'Hubungan', path: '/projects/relationships', icon: 'Network', subtitle: 'Manajemen hubungan antar entitas' },
-      { key: 'cases', title: 'Daftar Perkara', path: '/projects/cases', icon: 'FileSpreadsheet', subtitle: 'Daftar perkara yang sedang ditangani' }
-    ]
+      {
+        key: 'assets',
+        title: 'Aset',
+        path: '/assets',
+        icon: 'Building',
+      },
+      {
+        key: 'entities',
+        title: 'Entitas',
+        path: '/entities',
+        icon: 'Users',
+      },
+      {
+        key: 'relationships',
+        title: 'Hubungan',
+        path: '/relationships',
+        icon: 'GitFork',
+      },
+      {
+        key: 'cases',
+        title: 'Daftar Perkara',
+        path: '/cases',
+        icon: 'FileText',
+      },
+    ],
   },
   {
     key: 'osint',
     title: 'OSINT Collector',
-    subtitle: 'Pengumpulan dan analisis data dari sumber terbuka',
     path: '/osint',
     icon: 'Bot',
     children: [
-      { key: 'osint-dashboard', title: 'Dashboard OSINT', path: '/osint/dashboard', icon: 'BarChart2', subtitle: 'Ikhtisar pengumpulan data OSINT' },
-      { key: 'data-sources', title: 'Data Source Manager', path: '/osint/data-sources', icon: 'Globe', subtitle: 'Manajemen sumber data' },
-      { key: 'crawler', title: 'Crawler Scheduler', path: '/osint/crawler', icon: 'Clock', subtitle: 'Penjadwalan pengumpulan data' },
-      { key: 'keywords', title: 'Keyword Analyzer', path: '/osint/keywords', icon: 'Search', subtitle: 'Analisis kata kunci' },
-      { key: 'osint-reports', title: 'Reports & Export', path: '/osint/reports', icon: 'FileText', subtitle: 'Laporan dan ekspor data OSINT' }
-    ]
+      {
+        key: 'osint-dashboard',
+        title: 'Dashboard OSINT',
+        path: '/osint/dashboard',
+        icon: 'BarChart2',
+      },
+      {
+        key: 'data-sources',
+        title: 'Data Source Manager',
+        path: '/data-sources',
+        icon: 'Globe',
+      },
+      {
+        key: 'crawler',
+        title: 'Crawler Scheduler',
+        path: '/osint/crawler',
+        icon: 'Clock',
+      },
+      {
+        key: 'keywords',
+        title: 'Keyword Analyzer',
+        path: '/osint/keywords',
+        icon: 'Search',
+      },
+      {
+        key: 'reports-export',
+        title: 'Reports & Export',
+        path: '/reports-export',
+        icon: 'FileOutput',
+      },
+    ],
   },
   {
-    key: 'comparison',
+    key: 'case-comparison',
     title: 'Case Comparison',
-    subtitle: 'Perbandingan dan analisis antar kasus',
     path: '/comparison',
-    icon: 'GanttChart',
+    icon: 'GitCompare',
     children: [
-      { key: 'select-case', title: 'Pilih Kasus', path: '/comparison/select', icon: 'Search', subtitle: 'Pemilihan kasus untuk komparasi' },
-      { key: 'comparison-history', title: 'Riwayat Komparasi', path: '/comparison/history', icon: 'Clock', subtitle: 'Riwayat perbandingan kasus' }
-    ]
+      {
+        key: 'select-case',
+        title: 'Pilih Kasus',
+        path: '/comparison/select',
+        icon: 'FileSearch',
+      },
+      {
+        key: 'comparison-history',
+        title: 'Riwayat Komparasi',
+        path: '/comparison/history',
+        icon: 'History',
+      },
+    ],
   },
   {
     key: 'reports',
     title: 'Laporan',
-    subtitle: 'Pembuatan dan manajemen laporan',
     path: '/reports',
     icon: 'ScrollText',
     children: [
-      { key: 'create-report', title: 'Buat Laporan', path: '/reports/create', icon: 'FileText', subtitle: 'Pembuatan laporan baru' },
-      { key: 'all-reports', title: 'Semua Laporan', path: '/reports/all', icon: 'FileStack', subtitle: 'Daftar seluruh laporan' },
-      { key: 'admin-docs', title: 'Berkas Administrasi', path: '/reports/admin', icon: 'FileSpreadsheet', subtitle: 'Manajemen berkas administrasi' }
-    ]
+      {
+        key: 'create-report',
+        title: 'Buat Laporan',
+        path: '/reports/create',
+        icon: 'FilePlus',
+      },
+      {
+        key: 'all-reports',
+        title: 'Semua Laporan',
+        path: '/reports/all',
+        icon: 'Files',
+      },
+      {
+        key: 'admin-docs',
+        title: 'Berkas Administrasi',
+        path: '/reports/admin',
+        icon: 'FileSpreadsheet',
+      },
+    ],
+  },
+  {
+    key: 'performance',
+    title: 'Kinerja & KPI',
+    path: '/performance',
+    icon: 'TrendingUp',
   },
   {
     key: 'settings',
     title: 'Pengaturan',
-    subtitle: 'Konfigurasi sistem dan pengguna',
     path: '/settings',
     icon: 'Settings',
     children: [
-      { key: 'users', title: 'Manajemen Pengguna', path: '/settings/users', icon: 'UserCog', subtitle: 'Manajemen akun pengguna' },
-      { key: 'system', title: 'Sistem', path: '/settings/system', icon: 'Settings', subtitle: 'Pengaturan sistem' },
-      { key: 'audit', title: 'Log Audit', path: '/settings/audit', icon: 'AlertCircle', subtitle: 'Riwayat aktivitas sistem' }
-    ]
-  }
+      {
+        key: 'users',
+        title: 'Manajemen Pengguna',
+        path: '/settings/users',
+        icon: 'UserCog',
+      },
+      {
+        key: 'system',
+        title: 'Sistem',
+        path: '/settings/system',
+        icon: 'Settings',
+      },
+      {
+        key: 'audit',
+        title: 'Log Audit',
+        path: '/settings/audit',
+        icon: 'AlertCircle',
+      },
+    ],
+  },
 ];
 
 export function getMenuItemByPath(path: string): MenuItem | undefined {
