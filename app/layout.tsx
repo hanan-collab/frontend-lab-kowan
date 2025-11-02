@@ -1,21 +1,16 @@
-import type { Metadata } from 'next';
 import './globals.css';
-import 'leaflet/dist/leaflet.css';
-import { ReactQueryProvider } from '@/components/providers/ReactQueryProvider';
-import MainLayout from '@/components/layout/MainLayout';
+import { ReactNode } from 'react';
 
-export const metadata: Metadata = {
-  title: 'Asset Tracker Platform',
-  description: 'Next.js app initialized from Figma design export',
+export const metadata = {
+  title: 'Kalkulator Luas',
+  description: 'Kalkulator Luas Persegi & Kubus Glassy',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-        <ReactQueryProvider>
-          <MainLayout>{children}</MainLayout>
-        </ReactQueryProvider>
+    <html lang="id">
+      <body className="bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-500 min-h-screen">
+        {children}
       </body>
     </html>
   );
